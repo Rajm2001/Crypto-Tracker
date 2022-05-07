@@ -1,38 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.red{
+  color: red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.green{
+  color: green;
 }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat',sans-serif;
+  background-color: #1a1a1c;
+  color : #fff;
+}
+.night-mode  {
+  z-index: 10;
+  top: 4%;
+  right: 4%; 
+  position: absolute;
+}
+.night-mode  button{
+  font-size:25px;
+}
+.coin-app{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top : 3%;
+}
+.coin-search{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 50px;
+}
+.coin-text{
+  margin-bottom: 30px;
+}
+.coin-input{
+  border: none;
+  height: 30px;
+  text-align: center;
   color: white;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(206, 162, 162);
+  opacity: 1; /* Firefox */
+}
+ form input{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+ 
+}
+.titles{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.titles p{
+  width: 150px;
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-container{
+  display: flex;
+  justify-content: center;
+  /* margin-top: 2%; */
+}
+.coin-row{
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  height: 80px;
+  border-bottom:1px solid #d7d7d7;
+  width: 900px;
+}
+.coin{
+  display: flex;
+  padding-right: 24px;
+  min-width: 300px;
+  align-items: center;
+  
+}
+.coin h1{
+  font-size: 16px;
+  width: 150px;
+}
+.coin img{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.coin-symbol{
+  text-transform: uppercase;
+}
+.symbol{
+  display: flex;
+  flex-direction: row; 
+}
+.coin-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.coin-price{
+  width: 110px;
+}
+.coin-volume{
+  width: 230px;
+  margin-left: 20px;
+}
+.coin-marketcap{
+  width: 155px;
+}
+.coin-percent{
+  width: 100%;
+  text-align: center;
 }
